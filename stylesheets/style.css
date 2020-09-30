@@ -1,0 +1,227 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+*{
+
+    margin: 0;
+    padding: 0;
+
+}
+h1,h2,h3,h4,h5,h6{
+    color:white;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+.textBig{
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.textSmall
+{
+    font-size: 1.1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+/* Navigation Bar */
+.navbar{
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0px;
+    display: flex;
+}
+
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    border-radius: 50px;
+    width: 50%;
+    border: 3px solid white;
+}
+.nav-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    /* background-color: black; */
+}
+
+.nav-list li{
+    list-style: none;
+    padding: 26px 30px;
+    
+}
+.nav-list li:hover{
+    background-color: blue;
+    cursor: pointer;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+   
+} 
+
+.rightnav{
+    /* background-color: black; */
+    width: 50%;
+    text-align: right;
+    padding-right: 22px;
+}
+
+#search{
+    padding :6px 9px;
+    border-radius: 9px;
+    border: 2px solid grey;
+    font-size: 1.1rem;
+    vertical-align: middle;
+}
+
+.background{
+    background: rgba(0, 0, 0, 0.4) url('https://source.unsplash.com/user/erondu/');
+    background-size: cover;
+    background-blend-mode: darken ;
+}
+.button{
+    background: none;
+    border: 4px solid white;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 6px;
+    margin-top: 9px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.btn-sm{
+    padding :6px 9px;
+    vertical-align: middle;
+}
+
+/* Homepage */
+
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 75%;
+}
+
+
+.secondhalf img{
+    height: 302px;
+    width: 385px;
+    /* margin-left: 25px; */
+    display: block;
+    margin: auto;
+    border: 2px solid white;
+    border-radius: 190px;
+    margin-left: 31px;
+}
+
+.firstSection{
+    height: 100vh;
+}
+
+/* .firstHalf{
+
+} */
+.secondHalf{
+    width :30%;
+}
+
+/* Content Section */
+
+.section{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+}
+
+.left{
+    flex-direction: row-reverse;
+}
+
+
+.thumbnail img{
+    height: 345px;
+    width: 307px;
+    border-radius: 25px;
+}
+.paras{
+    padding: 0px 40px;
+}
+
+.red{
+    background-color: red;
+}
+.yellow{
+    background-color: yellow;
+}
+.blue{
+    background-color: blue;
+}
+
+/* Contact */
+
+.contact{
+    background-color:black;
+
+    
+}
+
+.textAlign{
+    text-align: center;
+}
+
+.form{
+    padding: 34px;
+}
+
+.form input{
+    padding: 15px;
+    border: 2px solid white;
+    background: none;
+    margin: 14px;
+    width: 25%;
+    font-size: 1.2rem;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+footer p{
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    background: grey;
+}
+/* Site Responsiveness */
+
+@media only screen and (max-width:1238px){
+    .nav-list{
+        flex-direction: column;
+
+    }   
+    .navbar{
+        flex-direction: column;
+    }
+    .rightnav{
+
+        text-align: center;
+    }
+    #search{
+        width: 100%;
+    }
+    #navlogo{
+        padding-left: 17px;
+    }
+   
+}
