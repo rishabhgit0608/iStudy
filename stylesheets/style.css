@@ -264,9 +264,13 @@ footer p{
     }
     section{
         flex-direction: column-reverse;
-        padding: 12px ;
+        padding-top: 25px;
+        padding-bottom: 25px;
     }
     .left{
         flex-direction: column-reverse;
+    }
+    .section p{
+        text-align: center;
     }
 }
