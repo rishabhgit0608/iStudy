@@ -47,7 +47,7 @@ h1,h2,h3,h4,h5,h6{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 70%;
     /* background-color: black; */
 }
 
@@ -69,7 +69,7 @@ h1,h2,h3,h4,h5,h6{
 
 .rightnav{
     /* background-color: black; */
-    width: 50%;
+    width: 30%;
     text-align: right;
     padding-right: 22px;
 }
@@ -175,8 +175,6 @@ h1,h2,h3,h4,h5,h6{
 
 .contact{
     background-color:black;
-
-    
 }
 
 .textAlign{
@@ -203,18 +201,36 @@ footer p{
     color: white;
     background: grey;
 }
+
+.contact h2{
+    padding-top: 17px;
+}
+.burger{
+    position: absolute;
+    display: none;
+    right: 5%;
+    top:15px;
+    cursor: pointer;
+}
+.line{
+    width: 33px;  
+    height: 4px;
+    margin: 3px 3px;
+    background-color: white;
+}   
+
 /* Site Responsiveness */
 
 @media only screen and (max-width:1238px){
     .nav-list{
         flex-direction: column;
-
     }   
     .navbar{
         flex-direction: column;
+        height: 478px;
+        transition: all 0.7s ease-out;
     }
     .rightnav{
-
         text-align: center;
     }
     #search{
@@ -223,5 +239,20 @@ footer p{
     #navlogo{
         padding-left: 17px;
     }
-   
+    .logo img{
+        margin-left: 21px;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 72px;
+    }
+    .v-nav{
+        opacity: 0;
+    }
+
+    .box-main{
+        padding: 30px;
+    }
 }
