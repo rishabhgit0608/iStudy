@@ -139,7 +139,7 @@ h1,h2,h3,h4,h5,h6{
 /* Content Section */
 
 .section{
-    height: 500px;
+
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -205,6 +205,7 @@ footer p{
 .contact h2{
     padding-top: 17px;
 }
+
 .burger{
     position: absolute;
     display: none;
@@ -212,6 +213,7 @@ footer p{
     top:15px;
     cursor: pointer;
 }
+
 .line{
     width: 33px;  
     height: 4px;
@@ -253,6 +255,18 @@ footer p{
     }
 
     .box-main{
-        padding: 30px;
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+    .secondhalf img{
+        height: 152px;
+        width: 199px;
+    }
+    section{
+        flex-direction: column-reverse;
+        padding: 12px ;
+    }
+    .left{
+        flex-direction: column-reverse;
     }
 }
